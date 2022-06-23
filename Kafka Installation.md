@@ -3,7 +3,7 @@
 This article will walk you through the steps to install Kafka on Ubuntu 22.04 using simple steps. 
 
 ### Procure an AWS EC2 instance under free tier
-![1](https://user-images.githubusercontent.com/61199820/175431474-1bedaa1c-4ac2-4f1e-9a38-8b4c8bd54f37.jpg)
+
 
 ### Step 1: Install Java and Zookeeper
 Kafka is written in Java and Scala and requires jre 1.7 and above to run it. In this step, you need to ensure Java is installed.
@@ -161,4 +161,4 @@ This message will appear in the consumer’s output:
 Hello, World
 This is a new message!
 ```
-![image](D:\Tutorials\Kafka\1.jpg)
+
