@@ -128,9 +128,36 @@ sudo systemctl status kafka
 
 ### Step 6: Testing installation
 
-Create a new topic
+Create a new topic and then list all topics
 
 ```
 ~/kafka/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic MyTestTopic
+
+~/kafka/bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 ```
-The kafka-console-producer.sh script can be used to build a producer from the command line. As arguments, it expects the hostname, port, and topic of the Kafka server.
+The kafka-console-producer.sh script can be used to build a producer from the command line. 
+As arguments, it expects the hostname, port, and topic of the Kafka server.
+
+```
+echo "Hello, World" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic MyTestTopic > /dev/null
+
+~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic MyTestTopic --from-beginning
+
+```
+Hello, World will appear in your terminal 
+To exit the consumer process, press CTRL+C
+
+Open a new terminal window and log into your server to try this.
+Start a producer in this new terminal to send out another message:
+
+```
+$ echo "This is a new message! " | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic MyTestTopic > /dev/null
+
+```
+This message will appear in the consumer’s output:
+
+```
+Hello, World
+This is a new message!
+```
+```
