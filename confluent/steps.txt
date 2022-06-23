@@ -55,3 +55,13 @@ kafka-console-consumer \
     --topic tweets \
     --from-beginning \
     --property print.key=true
+
+####################################################
+for creating a cluster
+
+run following commands
+
+export DOCKER_HOST_IP=127.0.0.1
+
+docker-compose -f zk-multiple-kafka-multiple.yml up -d
+
