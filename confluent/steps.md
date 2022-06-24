@@ -56,8 +56,9 @@ Hit ^C
 
 ```
 
-We have saved two additional records to a file called inputs.txt. You can view the contents of this file by running the following command:
+I have saved two additional records to a file called inputs.txt. You can view the contents of this file by running the following command:
 
+```
 cat /data/inputs.txt
 
  kafka-console-producer \
@@ -71,7 +72,7 @@ kafka-console-consumer \
     --topic tweets \
     --from-beginning \
     --property print.key=true
-
+```
 
 ### Follow the below steps to create a Kafka cluster
 
