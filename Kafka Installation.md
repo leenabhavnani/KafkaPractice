@@ -24,7 +24,8 @@ ruok
 ```
 (are you okay) if it’s all okay it will end the telnet session and reply with
 
-todo - screenshot
+
+![1](https://user-images.githubusercontent.com/61199820/175574193-7601dbf4-9651-48cd-8fd6-dc6f5d4216a9.jpg)
 
 ### Step 2: Create a Service User for Kafka
 
