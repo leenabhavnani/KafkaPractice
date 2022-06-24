@@ -105,7 +105,7 @@ sudo systemctl start kafka
 sudo systemctl status kafka
 ```
 You are more likely to see an error and the service will be inactive.
-Check the logs 
+Check the logs for the error message
 
 ```
 cat /home/kafka/kafka/kafka.log
