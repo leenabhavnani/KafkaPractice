@@ -2,4 +2,4 @@
 
 1. **Kafka Installation.md** - Contains the installation steps of kafka in Amazon EC2
 
-2. **confluent/steps.txt** - Contains the Kafka setup using Docker
+2. **confluent/steps.md** - Contains the Kafka setup using Docker
