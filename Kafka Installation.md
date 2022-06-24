@@ -128,6 +128,9 @@ sudo systemctl start kafka
 sudo systemctl status kafka
 ```
 
+![2](https://user-images.githubusercontent.com/61199820/175574528-30ff4922-3939-4a1c-b889-4a0ee1787058.jpg)
+
+
 ### Step 6: Testing installation
 
 Create a new topic and then list all topics
